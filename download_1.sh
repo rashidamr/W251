@@ -10,6 +10,6 @@ do
    echo "Downloading file id ${i}"
    wget -P /gpfs/gpfsfpo/gpfs1 http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-2gram-20090715-$i.csv.zip
    echo "Unzipping file id ${i}"
-   unzip googlebooks-eng-all-2gram-20090715-$i.csv -d /gpfs/gpfsfpo/gpfs1
-   rm googlebooks-eng-all-2gram-20090715-$i.csv.zip
+   unzip /gpfs/gpfsfpo/gpfs1/googlebooks-eng-all-2gram-20090715-$i.csv -d /gpfs/gpfsfpo/gpfs1
+   rm /gpfs/gpfsfpo/gpfs1/googlebooks-eng-all-2gram-20090715-$i.csv.zip
 done
