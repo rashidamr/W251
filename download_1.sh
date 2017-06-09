@@ -3,7 +3,9 @@
 
 sudo apt-get install unzip
 
-for ((i=30; i<=33; i++ ))
+mkdir gpfs1
+
+for ((i=0; i<=3; i++ ))
 do
    echo "Downloading file id ${i}"
    wget -P /gpfs/gpfsfpo/gpfs1 http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-2gram-20090715-$i.csv.zip
