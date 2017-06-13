@@ -49,7 +49,8 @@ def guess_from_list(list):
     for i in range(n):
         list2.append(list[i])
 
-    pos = {i[1]:int(i[2]) for i in list2}
+    #pos = {i[1]:int(i[2]) for i in list2}
+    pos = dict((i[1]:int(i[2])) for i in list2)
     return (random.choice([x for x in pos for y in range(pos[x])]))
 
 def next_word(word):
